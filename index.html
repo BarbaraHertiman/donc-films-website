@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donc Films</title>
+  <style>
+    /* Reset et styles globaux */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14pt;
+      line-height: 1.4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      padding: 20px;
+      background-color: #2B2B2B;
+      color: rgb(255, 247, 238);
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+    /* Titres */
+    h2 {
+      text-transform: uppercase;
+      margin: 120px 40px 20px 0px;
+      font-size: 26px;
+      text-align: right;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow:
+        2px 0 0 #00ffff, /* ombre cyan à droite */
+        -2px 0 0 #ff00ff; /* ombre magenta à gauche */
+
+    }
+    /* Tagline */
+    .tagline {
+      font-size: 28px;
+      margin: 20px 0;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    /* Logos */
+    .logo {
+      padding: 20px;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    /* Filmography */
+    .filmography {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .film-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .film {
+      background-color: #1e1e1e;
+      padding: 10px;
+      text-align: center;
+      flex: 1;
+    }
+    .film img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .film p {
+      margin-top: 10px;
+    }
+    /* About */
+    .about {
+      margin-bottom: 140px;
+      padding: 0 20px;
+    }
+    /* Founders */
+    .founders {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 50px;
+    }
+    .founder {
+      display: flex;
+      gap: 20px;
+      background-color: #1e1e1e;
+      padding: 20px;
+      align-items: center;
+    }
+    .founder img {
+      width: 250px;
+      height: auto;
+      object-fit: cover;
+    }
+    .founder div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .founder h3 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .founder p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    /* Contact */
+    .contact {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 18px;
+    }
+    .email-link {
+      color: rgb(255, 247, 238);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .email-link:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .film-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .founder {
+        flex-direction: column;
+        text-align: center;
+      }
+      .founder img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo1.jpg" alt="Donc Films logo">
+    </div>
+    <div class="tagline">
+      We don’t tell stories, we craft films to make every frame matter.
+    </div>
+
+    <div class="filmography">
+      <h2>Filmography</h2>
+      <div class="film-grid">
+        <div class="film">
+          <a href="https://vimeo.com/975880367/6452fef417" target="_blank" rel="noopener noreferrer">
+            <img src="images/lareparation.jpg" alt="La Réparation">
+          </a>
+          <p><strong>2025</strong><br>La Réparation (in development)</p>
+        </div>
+        <div class="film">
+          <a href="https://www.youtube.com/watch?v=ejE468srBd8" target="_blank" rel="noopener noreferrer">
+            <img src="images/ddv.jpg" alt="De donde vengo">
+          </a>
+          <p><strong>2021</strong><br>De donde vengo</p>
+        </div>
+        <div class="film">
+          <a href="https://www.youtube.com/watch?v=bCYcLTMo6yo" target="_blank" rel="noopener noreferrer">
+            <img src="images/tupi.jpg" alt="Tupí or not Tupí">
+          </a>
+          <p><strong>2015</strong><br>Tupí or not Tupí</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <h2>About</h2>
+      <div>
+        <p style="margin: 15px 0">Donc Films is a film production company founded by two Venezuelan women: Bárbara Hertiman, an editor with 15 years of experience in editing and post-production, and María Carolina Agüero, an executive producer with over 20 years of experience.</p>
+        <p style="margin: 15px 0">As professionals from Latin America, we have developed a strong network of collaborations across the region, fostering a bilateral film market between Europe and Latin America.</p>
+        <p style="margin: 15px 0">Based in Occitanie, we collaborate with other local production companies, creating co-productions that leverage both regional expertise and international opportunities.</p>
+        <p style="margin: 15px 0">Our work revolves around universal stories on migration, identity, and resilience, connecting cultures and strengthening artistic and economic exchanges.</p>
+        <p style="font-weight: bold; margin-top: 15px">Donc ! On filme !</p>
+      </div>
+    </div>
+
+    <div class="founders">
+      <div class="founder">
+        <img src="images/barbara.jpg" alt="Bárbara Hertiman">
+        <div>
+          <h3>Bárbara Hertiman</h3>
+          <p>Since 2011, I have explored video art and documentary storytelling across Venezuela, Bolivia, Chile, and Argentina, refining my perspective both behind the camera and in the editing room.</p>
+          <p>Now based in France, I create films that challenge conventions, inspired by a non-linear journey that has shaped my unique language.</p>
+        </div>
+      </div>
+      <div class="founder">
+        <img src="images/mariacaro.jpg" alt="María Carolina Agüero">
+        <div>
+          <h3>María Carolina Agüero</h3>
+          <p>With over 20 films and documentaries in Venezuela, I have worked as a production manager on award-winning projects like <em>The Family</em> (Cannes Critics' Week), <em>Desde Allá</em> (Golden Lion, Venice), and <em>The Shadow of the Catire</em> (Grand Prize, Warsaw Film Festival).</p>
+          <p>I've collaborated with TNT Latin America, Discovery Channel, National Geographic, and more. Based in France since 2021, I now serve on the documentary selection committee for the Biarritz Latin America Festival.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo" style="margin: 100px 0;">
+      <img src="images/logo2.png" alt="Donc Films logo">
+    </div>
+
+    <div class="contact">
+      <p>
+        <a href="mailto:contact@doncfilms.com" class="email-link">contact@doncfilms.com</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
